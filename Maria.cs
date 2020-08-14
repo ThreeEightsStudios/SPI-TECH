@@ -15,7 +15,7 @@ public class StartTraining : MonoBehaviour
 
     void Start()
     {
-        actions.Add("yes", SaidYes);
+        actions.Add("Change This Text To What You Want", SaidYes);
 
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
