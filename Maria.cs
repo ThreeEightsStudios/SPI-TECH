@@ -15,7 +15,7 @@ public class StartTraining : MonoBehaviour
 
     void Start()
     {
-        actions.Add("This Is What You Want Her To Say", Private Void Name It What You Want);
+        actions.Add("This Is What You Want Her To Recognize", RecognizeText);
 
 
         keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
@@ -30,7 +30,7 @@ public class StartTraining : MonoBehaviour
         actions[speech.text].Invoke();
     }
 
-    private void Name It What Its Called On Line 18()
+    private void RecognizeText()
     {
         // Scene Must Be Added To The Build Settings To Switch Scenes.
         SceneManager.LoadScene(Example_Scene);
